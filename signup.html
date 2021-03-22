@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>sign up</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="s.css" />
+		<script>
+			var myInput = document.getElementById('psw');
+			var letter = document.getElementById('letter');
+			var capital = document.getElementById('capital');
+			var number = document.getElementById('number');
+			var length = document.getElementById('length');
+			var input = document.getElementById('username');
+			//when user clicks on username field,show message
+			input.onfocus = function() {
+				document.getElementById('message').style.display = 'block';
+			};
+			// When the user clicks on the password field, show the message box
+			myInput.onfocus = function() {
+				document.getElementById('message').style.display = 'block';
+			};
+
+			// When the user clicks outside of the password field, hide the message box
+			myInput.onblur = function() {
+				document.getElementById('message').style.display = 'none';
+			};
+
+			// When the user starts to type something inside the password field
+			myInput.onkeyup = function() {
+				// Validate lowercase letters
+				var lowerCaseLetters = /[a-z]/g;
+				if (myInput.value.match(lowerCaseLetters)) {
+					letter.classList.remove('invalid');
+					letter.classList.add('valid');
+				} else {
+					letter.classList.remove('valid');
+					letter.classList.add('invalid');
+				}
+
+				// Validate capital letters
+				var upperCaseLetters = /[A-Z]/g;
+				if (myInput.value.match(upperCaseLetters)) {
+					capital.classList.remove('invalid');
+					capital.classList.add('valid');
+				} else {
+					capital.classList.remove('valid');
+					capital.classList.add('invalid');
+				}
+
+				// Validate numbers
+				var numbers = /[0-9]/g;
+				if (myInput.value.match(numbers)) {
+					number.classList.remove('invalid');
+					number.classList.add('valid');
+				} else {
+					number.classList.remove('valid');
+					number.classList.add('invalid');
+				}
+
+				// Validate length
+				if (myInput.value.length >= 8) {
+					length.classList.remove('invalid');
+					length.classList.add('valid');
+				} else {
+					length.classList.remove('valid');
+					length.classList.add('invalid');
+				}
+			};
+		</script>
+	</head>
+	<form>
+		<div class="container">
+			<h1>Sign Up</h1>
+			<p>Please fill in this form to create an account.</p>
+			<hr />
+
+			<label for="email"><b>Name</b></label>
+			<input
+				type="text"
+				placeholder="Enter Name"
+				name="name"
+				id="username"
+				required
+			/>
+			<label for="email"><b>Mobile no</b></label>
+			<input
+				type="text"
+				placeholder="Enter Mobileno"
+				name="mobileno"
+				required
+			/>
+			<label for="email"><b>Date of birth</b></label>
+			<input type="text" placeholder="dd/mm/yyyy" name="dob" required />
+
+			<label for="email"><b>Email</b></label>
+			<input
+				type="text"
+				placeholder="Enter Email"
+				name="email"
+				required
+			/>
+
+			<label for="psw"><b>Password</b></label>
+			<input
+				type="password"
+				placeholder="Enter Password"
+				name="psw"
+				id="psw"
+				required
+			/>
+
+			<label for="psw-repeat"><b>Repeat Password</b></label>
+			<input
+				type="password"
+				placeholder="Repeat Password"
+				name="psw-repeat"
+				required
+			/>
+
+			<label>
+				<input
+					type="checkbox"
+					checked="checked"
+					name="remember"
+					style="margin-bottom:15px"
+				/>
+				Remember me
+			</label>
+
+			<p>
+				By creating an account you agree to our
+				<a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+			</p>
+
+			<div class="clearfix">
+				<button type="button" class="cancelbtn">Cancel</button>
+				<button type="submit" class="signupbtn">Sign Up</button>
+			</div>
+		</div>
+
+		<div id="message">
+			<p id="letter" class="invalid"></p>
+			<p id="capital" class="invalid"></p>
+			<p id="number" class="invalid"></p>
+			<p id="length" class="invalid"></p>
+		</div>
+	</form>
+</html>

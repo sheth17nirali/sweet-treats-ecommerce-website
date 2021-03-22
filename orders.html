@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Orders</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="orders.css" />
+		<script>
+			function changeAction() {
+				alert('Order Changed Successfully!');
+			}
+			function deleteAction() {
+				alert('Order Deleted successfully!');
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<div class="head">
+				<div class="header">
+					<div class="searchContainer">
+						<input
+							type="text"
+							class="search"
+							name="search"
+							placeholder="Search Here..."
+						/>
+						<input
+							type="button"
+							class="searchButton"
+							name="search"
+							value="SEARCH"
+						/>
+					</div>
+					<div class="logoContainer">
+						<img src="logo.png" class="logo" />
+					</div>
+					<div class="loginButtonContainer">
+						<input
+							type="button"
+							class="loginButton"
+							name="Hi Barsha"
+							value="HI SAKSHI"
+						/>
+						<input
+							type="button"
+							class="loginButton"
+							name="LOG OUT"
+							value="LOG OUT"
+						/>
+					</div>
+				</div>
+				<div class="navBar">
+					<ul>
+						<li><a href="admin.html">Home</a></li>
+						<li><a href="addProduct.html">Add Product</a></li>
+						<li><a href="newAdmin.html">New Admin</a></li>
+						<li><a href="main.html">All Products</a></li>
+						<li><a href="orders.html" class="active">Orders</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<form onsubmit="">
+					<h1>Change Order Status</h1>
+					<br />
+					<table>
+						<tr>
+							<td>
+								<input
+									type="text"
+									class="formContent"
+									placeholder="Product Name"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="text"
+									class="formContent"
+									placeholder="Product Code"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="number"
+									class="formContent"
+									placeholder="Quantity"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="text"
+									class="formContent"
+									placeholder="Admin Name"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="button"
+									class="formButton"
+									name="Submit"
+									value="Confirm Change"
+									onclick="changeAction()"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="button"
+									class="formButton"
+									name="Submit"
+									value="Delete Order"
+									onclick="deleteAction()"
+								/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

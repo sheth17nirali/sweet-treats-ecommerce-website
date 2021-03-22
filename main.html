@@ -1,0 +1,197 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="cake.css">
+
+</head>
+<body>
+<div class="div1">
+<img src="logo.png" />
+<div class="div_nav"><a href="contact.html">CONTACT</a><a href="career.html">CAREER</a><a href="about.html">ABOUT US</a><a href="main.html">HOME</a></div>
+
+<input type="text" name="search" placeholder="Search..">
+
+
+<div class="dropdown">
+	<button class="dropbtn">PRODUCTS</button>
+	<div class="dropdown-content">
+		<a href="cakesmain.html">Cakes</a>
+	  <a href="cupcakesmain.html">Cupcakes</a>
+	  <a href="donutsmain.html">Doughnuts</a>
+	  <a href="pizzamain.html">Pizza</a>
+	  <a href="flower.html">Boquets</a>
+	  <a href="gift.html">Gifts</a>
+	  <a href="choclate.html">Choclates</a>
+	  <a href="props.html">Birthday props</a>
+	  
+	</div>
+  </div>
+  &nbsp;&nbsp;&nbsp;
+  <div class="dropdown">
+	<button  class="dropbtn">LOGIN</button>
+	<div id="myDropdown" class="dropdown-content">
+	  <a href="myweb.htm">LOGIN</a>
+	  <a href="signup.html">SIGNUP</a>
+	  <a href="admin.html">ADMIN LOGIN</a>
+	</div>
+</div>
+	
+</div>
+<div class="div2">
+<script language="javascript">//java script code for image swap
+var i=0;
+var path=new Array();
+path[0]="1.jpg";
+path[1]="8.jpg";
+path[2]="31.jpg";
+path[3]="4.jpg";
+path[4]="5.jpg";
+path[5]="7.jpg";
+path[6]="2.jpg";
+path[7]="61.jpg";
+function swapImage(){
+	document.slide.src=path[i];
+	if(i<path.length-1)
+	i++;
+	else 
+	i=0;
+	setTimeout("swapImage()",3500);
+}
+window.onload=swapImage;
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("march 23, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+<img src="7.jpg" name="slide"/>
+</div>
+<div class="my">
+<h3 class="glow">Save upto 30%</h3>
+<marquee>Hurry Up</marquee>
+<p id="demo"></p>
+</div>
+<div class="div3" align="center"><p>Sweet Treets Bakery is a local dessert bakery focused on</p><p> delighting our customers with artisanal, beautiful,</p><p> and high-quality cake and desserts.</p></div>
+<div class="div4">
+
+<table width="100%">
+<tr>
+<td align="center"><img src="cake.jpg" /><h3>CAKES</h3><hr  width="70%" color="#990066"/><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+</td>
+<td align="center">
+<img src="cupcake.jpg" /><h3>CUP CAKES</h3><hr  width="70%" color="#990066"/>
+<p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+</td>
+<td align="center">
+<img src="donuts.png" /><h3>DONUTS</h3><hr  width="70%" color="#990066"/>
+<p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+</td>
+</tr>
+<!--see more items-->
+<tr>
+<td align="center">
+<form><a href="cakesmain.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+</td>
+<td align="center">
+<form><a href="cupcakesmain.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+</td>
+<td align="center">
+<form><a href="donutsmain.html"><input type="button" value="SEE MORE" class="button"/></a></form>
+</td>
+<tr>
+	<td align="center"><img src="pizzaba.jpg" /><h3>PIZZA</h3><hr  width="70%" color="#990066"/><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+	</td>
+	<td align="center">
+	<img src="chocback.jpg" /><h3>CHOCOLATES</h3><hr  width="70%" color="#990066"/><p><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+</p>	
+	</td>
+	<td align="center">
+	<img src="bback.jpg" /><h3>BIRTHDAY PROPS</h3><hr  width="70%" color="#990066"/><p><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+</p>
+	
+	</td>
+	</tr>
+<tr>
+	<td align="center">
+	<form><a href="pizzamain.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+	</td>
+	<td align="center">
+	<form><a href="choclate.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+	</td>
+	<td align="center">
+	<form><a href="props.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+	</td>
+	<tr>
+		<td align="center"><img src="gift1.jpg" /><h3>GIFT CORNER </h3><hr  width="70%" color="#990066"/><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+		</td>
+		<td align="center">
+		<img src="flower-back.jpg" /><h3>BOUQUETS</h3><hr  width="70%" color="#990066"/><p><p>Cake is a form of sweet dessert that is typically baked. Cake is often served as a celebratory dish on ceremonial occasions, such as weddings, anniversaries, and birthdays. There are countless cake recipes available with us.A finished cake is often enhanced by covering it with icing, or frosting, and toppings such as sprinkles.</p>
+	</p>
+		</td>
+		
+		</tr>
+	<tr>
+		<td align="center">
+		<form><a href="gift.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+		</td>
+		<td align="center">
+		<form><a href="flower.html"><input type="button" value="SEE MORE" class="button" /></a></form>
+		</td>
+		
+</table>
+</div>
+<div class="div5">
+</div>
+<!--about bakery-->
+<div class="div6">"Desert makes everything better!"</div>
+<div class="div_footer">
+<center>
+<!--our information-->
+<div class="loc">LOCATION<br>
+632014 W Highway 290,<br> Ste 604
+Vellore,Texas<br>Pincode-632014</div>
+<div class="hours">
+HOURS<br>
+Mon - Fri: 10:30 am - 6:30 pm<br>
+Sat: 10:00 am - 5:00 pm</div>
+
+<div class="cont">
+CONTACT<br>
+Ph. 7717785296<br>
+For weddings: wedding@sweetsbakery.com<br><br>
+	
+	
+
+</div>
+</center>
+</div>
+</body>
+</html>
+

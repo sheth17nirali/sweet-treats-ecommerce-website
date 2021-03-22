@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Administrator</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="newAdmin.css" />
+		<script>
+			function submitAction() {
+				alert('New Admin added successfully!');
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<div class="head">
+				<div class="header">
+					<div class="searchContainer">
+						<input
+							type="text"
+							class="search"
+							name="search"
+							placeholder="Search Here..."
+						/>
+						<input
+							type="button"
+							class="searchButton"
+							name="search"
+							value="SEARCH"
+						/>
+					</div>
+					<div class="logoContainer">
+						<img src="logo.png" class="logo" />
+					</div>
+					<div class="loginButtonContainer">
+						<input
+							type="button"
+							class="loginButton"
+							name="Hi Barsha"
+							value="HI SAKSHI"
+						/>
+						<input
+							type="button"
+							class="loginButton"
+							name="LOG OUT"
+							value="LOG OUT"
+						/>
+					</div>
+				</div>
+				<div class="navBar">
+					<ul>
+						<li><a href="admin.html">Home</a></li>
+						<li><a href="addProduct.html">Add Product</a></li>
+						<li>
+							<a href="newAdmin.html" class="active">New Admin</a>
+						</li>
+						<li><a href="main.html">All Products</a></li>
+						<li><a href="orders.html">Orders</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<form onsubmit="">
+					<h1>New Admin Form</h1>
+					<table>
+						<tr>
+							<td>
+								<input
+									type="text"
+									class="formContent"
+									placeholder="First Name"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="text"
+									class="formContent"
+									placeholder="Last Name"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="email"
+									class="formContent"
+									placeholder="Enter your email"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="password"
+									class="formContent"
+									placeholder="Password"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="tel"
+									class="formContent"
+									placeholder="Enter your Mobile Number"
+									required
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Designation:</b>
+								<select>
+									<option value=""></option>
+									<option value="Store Manager"
+										>Store Manager</option
+									>
+									<option value="Staff">Staff</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea
+									rows="5"
+									cols="34.5"
+									placeholder="Address"
+									required
+								></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="button"
+									class="formButton"
+									name="Submit"
+									value="Add Admin"
+									onclick="submitAction()"
+								/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

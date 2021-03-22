@@ -1,0 +1,119 @@
+
+<html>					
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="abc.css"/>
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<script>
+  var myInput = document.getElementById("psw");
+  var letter = document.getElementById("letter");
+  var capital = document.getElementById("capital");
+  var number = document.getElementById("number");
+  var length = document.getElementById("length");
+  var input=document.getElementById("username")
+  //when user clicks on username field,show message
+  input.onfocus=function(){
+    document.getElementById("message").style.display="block";
+  }
+  // When the user clicks on the password field, show the message box
+  myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+  }
+  
+  // When the user clicks outside of the password field, hide the message box
+  myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+  }
+  
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {  
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+    }
+    
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {  
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
+    }
+  
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {  
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
+    }
+    
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+  }
+  </script>
+  
+
+
+</head>
+<title>transparent login form</title>
+<body>
+<div class="div1">
+<img src="logo.png" />
+<div class="div_nav"><a href="contact.html">ORDER</a><a href="career.html">CAREER</a><a href="about.html">ABOUT US</a><a href="main.html">HOME</a><a href="myweb.htm">LOGIN</a></div>
+</div><br><br><br>
+<form name="login">
+<div class ="login-box">
+<h1>Login</h1>
+<div class="textbox">
+<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+<input type="text" placeholder="Username" name="" value="" id="username" pattern="[A-Z a-z]?" title="can be alphabets or number" required>
+
+</div>
+<div class="textbox">
+<i class="fa fa-lock" aria-hidden="true"></i>
+<input type="password" placeholder="password" name="" value="" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+
+</div>
+<h2><a href="forgetpass.html">forgot password?</a></h2>
+<div class="btn">
+<button type="submit" class="signin">Sign in</button>
+</div>
+<div class="heading">
+
+<h1><pre>Dont have an account?<a href="signup.html">sign up</pre></a></h1>
+<div id="message">
+ 
+  <p id="letter" class="invalid"></p>
+  <p id="capital" class="invalid"></p>
+  <p id="number" class="invalid"></p>
+  <p id="length" class="invalid"></p>
+</div>
+				
+</div>
+</form>
+</body>
+</html>
+
+

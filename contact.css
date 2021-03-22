@@ -1,0 +1,349 @@
+body {
+	font-family: 'Poor Richard';
+	margin: 0px;
+	padding: 0px;
+	background-attachment: fixed;
+	background-image: url(back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	color: #990066;
+	font-weight: 600;
+}
+.div1 {
+	font-family: 'stencil';
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	margin-top: -15px;
+	height: 80px;
+	padding-top: 20px;
+	padding-left: 20px;
+	background-image: url(719fe4db7ff56fc99887bdc021dd9ade.jpg);
+	background-size: cover;
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+}
+.div_nav a {
+	float: right;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 40px;
+	margin-top: 10px;
+	font-weight: 500;
+	color: #cc66cc;
+}
+.div_nav a:hover {
+	border-bottom: 3px solid purple;
+}
+.div_nav a:active {
+	border-bottom: 3px solid purple;
+}
+.div1 img {
+	float: left;
+	padding-left: 25px;
+	width: 260px;
+	margin-top: 0px;
+	height: 75px;
+}
+.div2 {
+	width: 100%;
+	height: 650px;
+	margin-top: 10px;
+	padding: 0px;
+}
+.div2 img {
+	width: 100%;
+	height: 650px;
+}
+.div3 {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	width: 100%;
+	height: 200px;
+	background-color: rgba(128, 0, 128, 0.6);
+	overflow: hidden;
+	color: #000000;
+}
+.div3 p {
+	font-size: 24px;
+	font-family: 'Stencil';
+	font-weight: 800;
+	color: #ffccff;
+}
+.div4 {
+	padding-left: 20px;
+	padding-top: 15px;
+	margin-right: 0px;
+	width: 92%;
+	height: 1100px;
+	background-color: rgba(255, 255, 255, 0.6);
+	overflow: hidden;
+	padding-right: 20px;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.div4 img {
+	border-radius: 50%;
+	padding: 15px;
+	height: 100px;
+	width: 100px;
+}
+.button {
+	width: 150px;
+	border-radius: 12px;
+	background-color: #990066;
+	height: 35px;
+	color: #ffffff;
+	font-family: 'Poor Richard';
+}
+.div4 td {
+	padding-left: 15px;
+}
+.div5 {
+	width: 100%;
+	height: 450px;
+	background-image: url(44698400_242728936405343_6216057935018065920_n.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+.div6 {
+	background-color: rgba(128, 0, 128, 0.8);
+	text-align: center;
+	padding: 50px;
+	color: #ffffff;
+	font-size: 34px;
+	letter-spacing: 2px;
+}
+.div_footer {
+	background-image: url(719fe4db7ff56fc99887bdc021dd9ade.jpg);
+	background-size: cover;
+	padding: 20px;
+	height: 100px;
+	width: 100%;
+}
+.contactform {
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 50px;
+	font-size: 18px;
+	width: 70%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.headingform {
+	padding-top: 50px;
+	width: 100%;
+	height: 180px;
+	color: #ffccff;
+	background-color: rgba(128, 0, 128, 0.6);
+	font-size: 30px;
+}
+.box {
+	padding: 10px;
+	width: 250px;
+	font-family: 'Poor Richard';
+	border-radius: 10px;
+	height: 15px;
+}
+.btn {
+	width: 100%;
+	border-radius: 12px;
+	background-color: #990066;
+	height: 50px;
+	padding: 10px;
+	font-size: 24px;
+	letter-spacing: 8px;
+	color: #ffffff;
+	font-family: 'Poor Richard';
+}
+table {
+	text-align: center;
+	margin: 0px;
+	column-width: 100px;
+}
+.headdd {
+	width: 100%;
+	height: 180px;
+	font-size: x-large;
+	text-align: center;
+	background-attachment: fixed;
+	padding-top: 80px;
+	color: white;
+	background: url(banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.info {
+	margin: 60px;
+	width: 90%;
+	text-align: center;
+	height: 600px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.tble {
+	width: 90%;
+}
+.info td {
+	width: 50%;
+	padding: 20px;
+}
+.heading {
+	width: 100%;
+	height: 180px;
+	text-align: center;
+	background-attachment: fixed;
+	font-size: 72px;
+	padding-top: 80px;
+	color: white;
+	background: url(banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.ab {
+	margin: 50px;
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loc {
+	float: left;
+	overflow: hidden;
+	width: 32%;
+	margin-top: 1.5%;
+}
+.hours {
+	float: left;
+	overflow: hidden;
+	width: 32%;
+	margin-top: 1.5%;
+}
+
+.cont {
+	float: right;
+	overflow: hidden;
+	width: 32%;
+	margin-top: 1.5%;
+}
+
+/*countdown*/
+.my {
+	text-align: center;
+	font-size: 60px;
+	color: red;
+	height: 300px;
+	background-color: black;
+	margin-top: 5vh;
+	opacity: 75%;
+}
+
+.glow {
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+			0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073,
+			0 0 70px #e60073;
+	}
+
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+			0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6,
+			0 0 80px #ff4da6;
+	}
+}
+.my marquee {
+	color: blueviolet;
+}
+/*chat button*/
+.open-button {
+	background-color: rgb(95, 40, 199);
+	color: white;
+	padding: 16px 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 70%;
+	position: fixed;
+	bottom: 23px;
+	left: 28px;
+	width: 20vh;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+	background-color: 
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+	background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+	opacity: 1;
+}
+/*styling label*/
+.form-container label {
+	color: black;
+}
+/*styling heading*/
+.form-container h1 {
+	color: black;
+}
